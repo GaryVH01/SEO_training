@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Maison médicale Vert Pré Santé" />
+
+    <title>Contact - Maison médicale Vert Pré Santé</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="./js/map.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <img
+          class="navbar-logo"
+          src="./img/logo.png"
+          alt="Logo de médecine ou pharmacie, en forme de croix verte"
+        />
+        <ul class="navbar-menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="horaires.html">Horaires</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Contactez-nous</h1>
+    <section class="contact">
+      <form class="contact-form" action="/submit-form" method="post">
+        <div class="contact-form-line">
+          <label for="name">Nom :</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="contact-form-line">
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="contact-form-line">
+          <label for="message">Message :</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+
+    <section class="infos">
+      <div class="address">
+        <p>Cabinet Vert Pré Santé</p>
+        <p>1 rue de la Santé</p>
+        <p>59000 Lille</p>
+      </div>
+      <img src="./img/cabinet.webp" alt="" />
+    </section>
+    <div class="map" id="map"></div>
+
+    <footer class="footer">
+      <div class="footer-legal">
+        <a href="./footer_links/mentions.html">Mentions légales</a>
+        <a href="./footer_links/confidentialite.html"
+          >Politique de confidentialité</a
+        >
+      </div>
+      <p>© 2021 Vert Pré Santé</p>
+    </footer>
+  </body>
+</html>
