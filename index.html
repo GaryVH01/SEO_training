@@ -45,19 +45,30 @@
         <article>
           <div class="card">
             <div class="card-image">
-              <img
+              I see you've got a responsive image report for your website that's
+              highlighting some issues with one of your images. Let me break
+              down the problems and suggest fixes. Issue Summary Image #2 has
+              several responsive image issues: Mismatched width descriptors:
+              You're using 298w, 611w, 906w, and 1110w descriptors, but all
+              point to the same 3399×5098 image. Image size efficiency: At
+              1280×720 viewport, you're serving a 3399px wide image but
+              displaying it at only 298px wide - that's 91% wasted resolution.
+              Incorrect sizes attribute: The sizes attribute doesn't match the
+              actual displayed size of the image. Recommended Solution You need
+              to create appropriately sized versions of your image and update
+              your HTML. Here's how: Generate properly sized versions of your
+              image at the recommended dimensions: 298×447 611×916 906×1359
+              1110×1665 Update your HTML to use these new image files:
+              htmlCopy<img
                 class="card-img"
-                src="./img/jeremy-alford-O13B7suRG4A-unsplash.jpg"
+                src="./img/jeremy-alford-O13B7suRG4A-unsplash-298.jpg"
                 srcset="
-                  ./img/jeremy-alford-O13B7suRG4A-unsplash.jpg  298w,
-                  ./img/jeremy-alford-O13B7suRG4A-unsplash.jpg  611w,
-                  ./img/jeremy-alford-O13B7suRG4A-unsplash.jpg  906w,
-                  ./img/jeremy-alford-O13B7suRG4A-unsplash.jpg 1110w
+                  ./img/jeremy-alford-O13B7suRG4A-unsplash-298.jpg   298w,
+                  ./img/jeremy-alford-O13B7suRG4A-unsplash-611.jpg   611w,
+                  ./img/jeremy-alford-O13B7suRG4A-unsplash-906.jpg   906w,
+                  ./img/jeremy-alford-O13B7suRG4A-unsplash-1110.jpg 1110w
                 "
-                sizes="(max-width: 600px) 298px, 
-                   (max-width: 1024px) 611px, 
-                   (max-width: 1440px) 906px, 
-                   1110px"
+                sizes="(min-width: 660px) 298px, calc(90vw - 22px)"
                 width="300"
                 height="200"
                 alt="Photo d'une femme médecin assise sur une chaise arborant un grand sourire. Elle porte un tailleur de couleur blanche, des lunettes de vue, de grandes boucles d'oreilles et un stétoscope autour du cou."
