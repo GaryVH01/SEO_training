@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /admin/
 Disallow: /private/
 
-Sitemap: https://www.tonsite.com/sitemap.xml 
+Sitemap: https://cabinetvertpresante.netlify.app
