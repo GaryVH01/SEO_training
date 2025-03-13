@@ -1,3 +1,20 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 /* ----Resets CSS---- */
 * {
     margin: 0;
@@ -434,6 +451,15 @@ section {
 
     .navbar-menu li {
         margin: 20px 0;
+    }
+
+    .contact {
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-form {
+        min-width: 90vw;
     }
 }
 
