@@ -356,8 +356,31 @@ section {
         font-size: 1.4em;
     }
 
+    .blog {
+        margin-bottom: 0;
+    }
+
+    .blog-posts {
+        background-color: #94d897;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .map {
+        height: 300px;
+    }
+
+    .address {
+        margin-bottom: 20px;
+    }
+
     .infos {
         flex-direction: column;
+        background-color: #c8c8c8;
+    }
+
+    .infos img {
+        width: 80vw;
     }
 
     .card {
