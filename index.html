@@ -16,11 +16,11 @@
   <body>
     <header class="header">
       <nav class="navbar">
-        <!-- <img
+        <img
           class="navbar-logo"
-          src="./img/logo-sm.webp"
+          src="./img/logo-md.webp"
           alt="Logo de médecine ou pharmacie, en forme de croix verte"
-        /> -->
+        />
         <ul class="navbar-menu">
           <li><a href="index.html">Accueil</a></li>
           <li><a href="horaires.html">Horaires</a></li>
@@ -48,15 +48,20 @@
               <img
                 class="card-img"
                 src="./img/jeremy-alford-O13B7suRG4A-unsplash.jpg"
+                srcset="
+                  ./img/jeremy-alford-298.jpg   298w,
+                  ./img/jeremy-alford-611.jpg   611w,
+                  ./img/jeremy-alford-906.jpg   906w,
+                  ./img/jeremy-alford-1110.jpg 1110w
+                "
+                sizes="(max-width: 600px) 298px, 
+                   (max-width: 1024px) 611px, 
+                   (max-width: 1440px) 906px, 
+                   1110px"
                 width="300"
                 height="200"
-                alt=""
-              />
-              <!-- <img
-                class="card-img"
-                src="./img/chirurgiens-sm.webp"
                 alt="Photo d'une femme médecin assise sur une chaise arborant un grand sourire. Elle porte un tailleur de couleur blanche, des lunettes de vue, de grandes boucles d'oreilles et un stétoscope autour du cou."
-              /> -->
+              />
             </div>
             <h3>Nouvelle arrivée</h3>
             <div>
@@ -74,16 +79,14 @@
         <article>
           <div class="card">
             <div class="card-image">
-              <img
-                class="card-img"
-                src="./img/jeremy-alford-O13B7suRG4A-unsplash.jpg"
-                alt=""
-                width="300"
-                height="200"
-              />
               <!-- <img
                 class="card-img"
                 src="./img/chirurgiens-sm.webp"
+                srcset="
+                  ./img/chirurgiens-sm.webp     480w,
+                  ./img/chirurgiens-md.webp    1024w,
+                  ./img/chirurgiens-large.webp 1920w
+                "
                 alt="Photo vue à la première personne de médecins organisés en cercle au dessus de la table d'opération regardant vers le patient. Ils portent tous un masque chirurgical. Des lumières de bloc opératoire, en fond, éteintes.."
               /> -->
             </div>
@@ -104,16 +107,14 @@
         <article>
           <div class="card">
             <div class="card-image">
-              <img
-                class="card-img"
-                src="./img/jeremy-alford-O13B7suRG4A-unsplash.jpg"
-                alt=""
-                width="300"
-                height="200"
-              />
               <!-- <img
                 class="card-img"
                 src="./img/covid-sm.webp"
+                srcset="
+                  ./img/covid-sm.webp     480w,
+                  ./img/covid-md.webp    1024w,
+                  ./img/covid-large.webp 1920w
+                "
                 alt="Doses de vaccination pour le coronavirus. Différents échantillons en verre transparent alignés avec un couvercle de couleur bleue."
               /> -->
             </div>
